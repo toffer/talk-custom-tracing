@@ -3,7 +3,8 @@
 import sys
 import time
 
-from tracer_2 import ZipkinTracer
+from trace import ZipkinTracer
+
 
 def child():
     for i in range(5):
