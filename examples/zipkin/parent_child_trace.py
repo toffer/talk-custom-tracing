@@ -3,8 +3,7 @@
 import sys
 import time
 
-from trace import trace_call
-
+from tracer_2 import ZipkinTracer
 
 def child():
     for i in range(5):
@@ -20,6 +19,6 @@ def main():
     return parent()
 
 if __name__ == '__main__':
-    sys.settrace(trace_call)
+    sys.settrace(ZipkinTracer())
     main()
     sys.settrace(None)
