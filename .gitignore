@@ -5,3 +5,4 @@ __pycache__/
 
 zipkin.log
 har.log
+trace.log
